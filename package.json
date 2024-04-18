@@ -33,6 +33,7 @@
   "devDependencies": {
     "@types/node": "^20.12.7",
     "@types/signale": "^1.4.7",
-    "sonarqube-scanner": "^3.3.0"
+    "sonarqube-scanner": "^3.3.0",
+    "ts-node-dev": "^2.0.0"
   }
 }
