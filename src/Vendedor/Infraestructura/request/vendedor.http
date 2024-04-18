@@ -1,0 +1,26 @@
+POST http://localhost:3000/vendedor/agregarVendedor HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_Vendedor":223270,
+    "nombre_vendedor":"Kato",
+    "numeroTel_vendedor":123,
+    "user": "katsKato",
+    "password": "katsKatos"
+}
+
+###
+DELETE http://localhost:3000/vendedor/eliminarVendedor HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_Vendedor":223272
+}
+
+###
+GET http://localhost:3000/vendedor/ObtenerVendedor HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_Vendedor":223272
+}
