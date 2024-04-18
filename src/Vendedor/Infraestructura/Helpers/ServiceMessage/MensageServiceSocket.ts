@@ -9,7 +9,7 @@ export class MensajeServiceSocket implements ImensajeService{
         socket.on("connect", ()=>{
             console.log("exito al Conectar al servidor socket");
             
-            socket.emit("nuevo vendedor", "Pago Realizado");
+            socket.emit("newClient", "Pago Realizado");
         });
 
         socket.on("disconnect", ()=>{
