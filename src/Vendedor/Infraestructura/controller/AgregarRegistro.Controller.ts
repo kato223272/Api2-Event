@@ -6,11 +6,13 @@ export class AddRegistroController{
 
     async run(req:Request, res:Response){
         const data = req.body;
-        console.log("Error en el archivo controller", data);
+        const id = Number(data.id);
+        console.log("Error en el archivo controller", id);
+
 
         try {
             const registroVendedor = await this.addRegistroCasoUso.run(
-                data.id
+                id
             );
 
             if(registroVendedor){
