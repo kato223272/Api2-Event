@@ -9,15 +9,15 @@ export class AddRegistroController{
         console.log("Error en el archivo controller", data);
 
         try {
-            const registro = await this.addRegistroCasoUso.run(
+            const registroVendedor = await this.addRegistroCasoUso.run(
                 data.id
             );
 
-            if(registro){
+            if(registroVendedor){
                 res.status(201).send({
                     status:"success",
                     data:{
-                        id_Vendedor:registro?.id_Vendedor
+                        id_Vendedor:registroVendedor?.id_Vendedor
                     }
                 });
             }else{
