@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node dist/index.js",
+    "start": "tsc && node dist/index.types",
     "dev": "nodemon ./src/index.ts",
     "sonar": "sonar-scanner"
   },
@@ -15,7 +15,6 @@
     "@types/amqplib": "^0.10.5",
     "@types/bcrypt": "^5.0.2",
     "@types/express": "^4.17.21",
-    "@types/node": "^20.11.7",
     "@types/nodemon": "^1.19.6",
     "@types/socket.io": "^3.0.2",
     "amqplib": "^0.10.3",
@@ -32,6 +31,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@types/node": "^20.12.7",
     "@types/signale": "^1.4.7",
     "sonarqube-scanner": "^3.3.0"
   }
