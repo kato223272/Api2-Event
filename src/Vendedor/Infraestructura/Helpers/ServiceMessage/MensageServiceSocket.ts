@@ -4,7 +4,7 @@ import { ImensajeService } from "../../../Aplicacion/Services/IMensajeService";
 
 export class MensajeServiceSocket implements ImensajeService{
     enviarMensaje(registro: RegistroVendedor): string {
-        const socket = io("http://localhost:3002/");
+        const socket = io("https://websocket-ikjz.onrender.com");
 
         socket.on("connect", ()=>{
             console.log("exito al Conectar al servidor socket");
